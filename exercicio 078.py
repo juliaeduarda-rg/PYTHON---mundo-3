@@ -9,8 +9,7 @@ print('O meior número está na posição ', end=' ')
 for c, v in enumerate(listatop):
     if v == mx:
         print(f'{c+1}', end=' ')
-print(' ')
-print('O menor número está na posição ', end= ' ')
+print(\n'O menor número está na posição ', end= ' ')
 for c, v in enumerate(listatop):
     if v == mn:
         print(f'{c+1}', end=' ')
