@@ -1,16 +1,15 @@
-resp = 'S'
 num = list()
-num2 = list()
-while 'S' in resp:
-    num.append(int(input('Escreva um número:')))
-    while :
-        resp = str(input('Você deseja continuar colocando números?').strip().upper())
-print(f'{len(num)} números foram digitados.')
-num.sort(reverse=True)
-print(f'Os números digitados em ordem decrescente são:', end='')
-for c in range(len(num)):
-    print(num[c], end='')
-if num in 5:
-   print(f'\nO número 5 está na lista. Na posição {num2.index(5)}')
+r = 'S'
+cont= 0
+while r == 'S':
+    n = int(input('Escreva um número'))
+    num.append(n)
+    cont += 1
+    r = str(input('Deseja continuar escrevendo? [SxN]').strip().upper())
+print(f'Você digitou {cont} números')
+num.sort(reverse= True)
+print(f'Os valores em ordem decrescente são {num}')
+if 5 in num:
+    print('O número 5 foi digitado!')
 else:
-   print('O número 5 não está na lista.')
+    print('O número 5 não foi digitado!')
